@@ -1,0 +1,47 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    height: 8vh;
+
+    min-width: 812px;
+}
+
+#options {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
+
+    min-width: 360px;
+}
+
+.option {
+    font-weight: 200;
+    font-size: 20px;
+    color: #FFFF;
+    height: 4.5vh;
+
+    cursor: pointer;
+}
+
+.option-active {
+    color: #b90778;   
+    font-weight: 700;  
+    font-size: 20px;
+    
+    height: 3.5vh;
+
+    border-style: none none solid none;
+    border-color: #b90778;
+}
+
+.option:hover {
+    font-weight: 200;
+    font-size: 20px;
+    color: #2CD397;     
+    height: 3.5vh;        
+
+    border-style: none none solid none;
+    border-color: #2CD397;
+}
