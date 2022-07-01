@@ -3,6 +3,10 @@
 }
 
 body {
-    margin: 0 6em;
+    margin: 0 10em;
     background-color: #040A1A;
+}
+
+::selection {
+    background: #152345;
 }

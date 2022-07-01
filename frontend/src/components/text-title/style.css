@@ -1,0 +1,33 @@
+#text-title {
+    display: flex;
+    align-items: center;
+}
+
+#text-title h3 {
+    color: #fff;
+    font-size: 40px;
+    white-space: nowrap;
+
+    margin: 0 0 15px;
+}
+
+#text-title div {
+    width: 100%;
+    padding-left: 35px;
+}
+
+.title-line {
+    border-color: #152345;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#text-title h3::before {
+    content: '<';
+    color: #152345;
+}
+
+#text-title h3::after {
+    content: '/>';
+    color: #152345;
+}

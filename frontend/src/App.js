@@ -1,9 +1,9 @@
+import React from "react";
 import Home from "../src/pages/home"
 
 function App() {
   return (
     <body>
-      
       <div className="App">
         <Home />
       </div>
