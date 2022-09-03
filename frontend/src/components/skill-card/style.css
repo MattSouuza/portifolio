@@ -9,7 +9,8 @@
     margin-top: 33px;
     padding: 0 100px;
 
-    background-color: #0C152D;
+    background: rgb(12, 21, 45);
+    background: linear-gradient(131deg, rgb(12, 21, 45) 30%, rgb(12, 31, 80) 100%);
     border-radius: 1em;
 }
 
@@ -38,7 +39,7 @@
 .icon-wrapper {
     height: auto;
     width: fit-content;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +74,7 @@
     margin-bottom: 5vh;
 }
 
-.skills-ope > div {
+.skills-ope>div {
     width: 100%;
     margin-bottom: 5vh;
 }
