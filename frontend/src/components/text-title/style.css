@@ -1,6 +1,7 @@
 #text-title {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 #text-title h3 {
@@ -30,4 +31,10 @@
 #text-title h3::after {
     content: '/>';
     color: #152345;
+}
+
+@media only screen and (max-width: 950px) {
+    .title-line {
+        display: none;
+    }
 }

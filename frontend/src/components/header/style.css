@@ -1,11 +1,16 @@
-nav {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2em;
-    height: 8vh;
 
-    min-width: 812px;
+    margin-top: 2em;
+
+    height: 100%;
+    width: 100%;
+}
+
+.small-length {
+    display: none;
 }
 
 #options {
@@ -17,31 +22,53 @@ nav {
 }
 
 .option {
-    font-weight: 200;
-    font-size: 20px;
+    text-decoration: none;
     color: #FFFF;
-    height: 4.5vh;
+    font-weight: 200;
+    font-size: 18px;
+
+    height: 20px;
+    padding-bottom: 10px;
 
     cursor: pointer;
 }
 
-.option-active {
-    color: #b90778;   
-    font-weight: 700;  
-    font-size: 20px;
+.active {
+    color: #b90778;
     
-    height: 3.5vh;
-
     border-style: none none solid none;
+    border-width: 2px;
     border-color: #b90778;
 }
 
 .option:hover {
-    font-weight: 200;
-    font-size: 20px;
-    color: #2CD397;     
-    height: 3.5vh;        
+    color: #2CD397;
 
     border-style: none none solid none;
+    border-width: 2px;
     border-color: #2CD397;
+}
+
+.active:hover {
+    color: #C33F93;
+    
+    border-style: none none solid none;
+    border-width: 2px;
+    border-color: #C33F93;
+}
+
+@media only screen and (max-width: 1000px) {
+    .full-length {
+        display: none;
+    }
+
+    .small-length {
+        display: flex;
+    }
+
+    .menu {
+        color: #b90778;
+        width: 12vw;
+        height: 12vh;
+    }
 }

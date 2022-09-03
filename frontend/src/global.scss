@@ -3,8 +3,10 @@
 }
 
 body {
-    margin: 0 10em;
+    margin: 0 15em;
     background-color: #040A1A;
+
+    overflow-x: hidden;
 }
 
 ::selection {

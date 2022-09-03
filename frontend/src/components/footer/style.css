@@ -3,7 +3,7 @@ footer {
 }
 
 footer hr {
-  border-color: #fff;
+  border-color: #ffffffc5;
   border-width: 1px;
   border-style: solid;
 }
@@ -15,8 +15,7 @@ footer hr {
 }
 
 .icon {
-  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(80deg) brightness(113%) contrast(101%);
-
+  color: #fff;
   height: 32px;
   width: 32px;
 }
@@ -43,8 +42,8 @@ footer hr {
 }
 
 .arrow {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 
   cursor: pointer;
   animation: movebtn 2s ease-in-out infinite;

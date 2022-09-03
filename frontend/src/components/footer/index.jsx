@@ -1,7 +1,7 @@
 import React from "react";
-import githubIcon from "../../images/github.svg";
-import linkedinIcon from "../../images/linkedin.svg";
-import arrowIcon from "../../images/arrow.svg";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { MdKeyboardArrowUp } from "react-icons/md";
+
 import heartIcon from "../../images/heart.svg";
 import "./style.css"
 
@@ -12,10 +12,10 @@ const Footer = () => {
             <div id="footer-container">
                 <div id="social-media">
                     <a href="https://github.com/MattSouuza">
-                        <img className="icon" alt="" srcset={githubIcon} />
+                        <AiFillGithub className="icon"/>
                     </a>
                     <a href="https://www.linkedin.com/in/matheus-souza-silva-148492198/">
-                        <img className="icon" alt="" srcset={linkedinIcon} />
+                        <AiFillLinkedin className="icon"/>
                     </a>
                 </div>
 
@@ -25,7 +25,7 @@ const Footer = () => {
 
                 <div id="button-up">
                     <a href="#">
-                        <img className="icon arrow" alt="" srcset={arrowIcon} />
+                        <MdKeyboardArrowUp className="icon arrow"/>
                     </a>
                 </div>
             </div>

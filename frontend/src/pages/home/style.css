@@ -4,49 +4,60 @@
 }
 
 #banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
     margin-top: 3em;
     height: 70vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    max-width: 1575px;
 }
 
 #banner-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 -150px 0 0;
 }
 
 #banner-title h1,
 h2 {
+    margin: 0;
+}
+
+h1,
+h2,
+p {
     z-index: 1;
 }
 
 .ellipse-blur {
-    width: 190px;
-    height: 190px;
-    background: #B90778;
-    filter: blur(100px);
+    background: #b90778;
+    filter: blur(120px);
+    z-index: 0;
 }
 
-.ellipse-blur-top {
+.blur-top {
+    width: 190px;
+    height: 190px;
+
     position: absolute;
     left: 10%;
     top: 32%;
 }
 
-.ellipse-blur-bottom {
-    position: absolute;
-    right: 15%;  
-    bottom: -45%;
+.blur-bottom {
+    align-self: flex-end;
+    margin-left: -150px;
+    width: 190px;
+    height: 190px;
 }
 
 #presentation-title {
     color: #fff;
-    margin: 0 -100px 0 0;
     font-size: 64px;
 
     white-space: nowrap;
@@ -65,7 +76,6 @@ h2 {
 #presentation-subtitle {
     font-size: 50px;
     color: #fff;
-    margin: 0 -100px 0 0;
 
     white-space: nowrap;
 }
@@ -81,29 +91,31 @@ h2 {
 }
 
 #main-img {
-    width: 550px;
-    height: 550px;
+    max-width: 100%;
+    height: auto;
 
     border-radius: 7em;
 }
 
 #about-container {
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 238px;
+    margin: 238px 0;
+    margin-right: 0;
 }
 
-/* #about {
+#about-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-
-    width: 100%;
-
-    max-width: 1575px;
-} */
+    flex-wrap: wrap-reverse;
+    flex-grow: 2;
+    align-content: space-between;
+}
 
 #about-img {
     width: 360px;
@@ -114,7 +126,6 @@ h2 {
 
 #about-text {
     max-width: 863px;
-    margin-left: 100px;
 
     text-align: justify;
 
@@ -137,4 +148,50 @@ h2 {
     position: relative;
     top: 5px;
     left: 3px;
+}
+
+@media only screen and (max-width: 1550px) {
+    #banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #main-img {
+        width: 450px;
+        height: auto;
+        border-radius: 5em;
+    }
+
+    #presentation-title {
+        font-size: 45px;
+    }
+
+    #presentation-subtitle {
+        font-size: 35px;
+    }
+
+    #about-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5em;
+    }
+
+    #about-text p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    #banner-title {
+        margin: 5% 0;
+    }
+
+    #banner-title h1 {
+        font-size: 5vw;
+    }
+
+    #banner-title h2 {
+        font-size: 4vw;
+    }
 }
