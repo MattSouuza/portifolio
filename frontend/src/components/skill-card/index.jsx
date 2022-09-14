@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import TextTitle from "../text-title";
+import Tag from "../tag";
+
 import nodejs from "../../images/nodejs.png"
 import react from "../../images/react.png"
 import sql from "../../images/sql.png"
@@ -10,7 +12,6 @@ import htmlcssjs from "../../images/html-css-js.png"
 import arrowIcon from "../../images/arrow.svg";
 
 import "./style.css";
-import Tag from "../tag";
 
 const variants = {
     open: { rotate: 360 },

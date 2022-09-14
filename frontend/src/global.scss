@@ -4,7 +4,8 @@
 
 body {
     margin: 0 15em;
-    background-color: #040A1A;
+    background: rgb(4,10,26);
+    background: linear-gradient(180deg, rgba(4,10,26,1) 0%, rgba(6,15,38,1) 100%);
 
     overflow-x: hidden;
 }

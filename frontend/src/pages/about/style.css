@@ -1,31 +1,33 @@
 #side-image {
     /* the magic ingredient */
     -webkit-backface-visibility: hidden;
-    -webkit-transform: skew(-30deg, 0);
     transform: rotate(50deg);
     overflow: hidden;
 
-    width: 45%;
-    height: 150%;
+    width: 30%;
+    height: 100%;
+
+    min-height: 1000px;
+    min-width: 687px;
 
     object-fit: cover;
     border-radius: 5em;
     box-shadow: 0px 4px 250px 5px #B90778;
     
     position: absolute;
-    right: -300px;
-    top: -200px;
+    right: -130px;
+    top: -40px;
     z-index: -1;
+
+    background-color: #004055;
 }
 
 #side-image img {
-    height: 130%;
+    height: 115%;
     
-    -webkit-transform: skew(30deg, 0);
     transform: rotate(-50deg);
-    
     position: relative;
-    left: -15%;
+    right: 130px;
     z-index: -1;
 }
 
@@ -49,7 +51,7 @@
 }
 
 #text {
-    width: 670px;
+    width: 1000px;
 }
 
 #about #text b {
