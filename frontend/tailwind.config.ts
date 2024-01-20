@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         'night-bg': {
           DEFAULT: '#040A1A',
-          lighter: '#152345'
+          light: '#152345'
         },
         'bloom-pink': {
           DEFAULT: '#B90778',

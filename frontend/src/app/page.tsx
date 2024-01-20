@@ -1,16 +1,34 @@
-import HeroSectionDesktop from "./svg/heroSectionDesktop";
+import imgBannerDesktop from '@/app/assests/images/hero-image-desktop.png'
+import imgBannerMobile from '@/app/assests/images/hero-image-mobile.png'
+
+import Image from 'next/image'
+
+import { SkillsCard } from './components/skills-card/skills-card'
 
 export default function Home() {
   return (
-    <section className="flex flex-col-reverse box-border lg:flex-row items-center justify-center">
+    <>
+      <section className="flex flex-col-reverse box-border lg:flex-row items-center justify-center -mx-10">
 
-      <section className="flex flex-col z-10 md:-mr-56">
-        <h1 className="text-white whitespace-nowrap md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold">Olá! Meu nome é Matheus</h1>
-        <h2 className="text-white whitespace-nowrap md:text-1xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mt-5">Desenvolvedor Fullstack</h2>
+        <section className="flex flex-col justify-center z-20 mx-4 -mt-52 sm-mt-40 lg:-mr-56 lg:mt-0">
+          <h1 className="text-white z-10 text-4xl sm:text-5xl lg:whitespace-nowrap lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold">Olá! Meu nome é Matheus</h1>
+          <h2 className="text-white z-10 text-2xl sm:text-3xl lg:whitespace-nowrap lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mt-5">Desenvolvedor Fullstack</h2>
+        </section>
+
+        <figure className="hidden lg:block">
+          <Image src={imgBannerDesktop} alt='Matheus Souza picture' className="w-full h-auto object-cover -mt-20 z-0" />
+        </figure>
+
+        <figure className="lg:hidden flex justify-center items-center z-10">
+          <div className="absolute top-6 z-10 w-screen h-full bg-gradient-to-b from-transparent via-transparent to-gray-900"></div>
+          <Image src={imgBannerMobile} alt='Matheus Souza picture' className="w-screen h-screen object-cover -mt-20 z-0" />
+        </figure>
+
       </section>
 
-      <HeroSectionDesktop />
-
-    </section>
+      <section>
+          <SkillsCard/>
+      </section>
+    </>
   )
 }
