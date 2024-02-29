@@ -9,7 +9,7 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding: 0 2em;
+        padding: 1em 2em;
     }
 }
 
